@@ -58,7 +58,7 @@ module ArkEcosystem
           if @vendor_field
             bytes << @vendor_field
 
-            if @vendor_field.size < 64
+            if @vendor_field.size < 65
               bytes << [].pack("x#{64 - @vendor_field.size}")
             end
           else
